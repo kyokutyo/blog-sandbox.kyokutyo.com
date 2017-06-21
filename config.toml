@@ -1,0 +1,24 @@
+baseURL = "https://blog-c04e0.firebaseapp.com"
+languageCode = "ja"
+title = "ぼくのインターネッツ"
+theme = "hemingway2"
+copyright = "&copy; kyokutyo 2017"
+googleAnalytics = ""
+description = "ぼくのインターネッツ。"
+keywords = ["飲酒", "インターネット", "肉", "プログラミング"]
+
+[params.highlight]
+style = "github"
+languages = ["html", "javascript", "css", "ruby", "perl", "go", "bash", "dockerfile"]
+
+[[params.social]]
+url = "https://github.com/kyokutyo"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://twitter.com/kyokutyo"
+fa_icon = "fa-twitter"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"

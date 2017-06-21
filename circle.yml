@@ -1,11 +1,22 @@
+checkout:
+  post:
+    - git submodule sync
+    - git submodule update --init --recursive
 machine:
+  timezone: Asia/Tokyo
   node:
     version: 6.1.0
 dependencies:
+  pre:
+    - go get -v github.com/spf13/hugo
   override:
     - npm install -g firebase-tools
 deployment:
   production:
     branch: master
     commands:
+      - hugo
       - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+test:
+  override:
+    - echo "test"
