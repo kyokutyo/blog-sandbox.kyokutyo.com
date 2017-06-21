@@ -1,7 +1,3 @@
-machine:
-  timezone: UTC
-  node:
-    version: 6.1.0
 dependencies:
   override:
     - npm install -g firebase-tools
