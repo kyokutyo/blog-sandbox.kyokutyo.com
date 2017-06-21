@@ -9,3 +9,6 @@ deployment:
     branch: master
     commands:
       - firebase deploy --token=$FIREBASE_TOKEN --non-interactive
+test:
+  override:
+    - echo "test"
